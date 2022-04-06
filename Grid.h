@@ -1,3 +1,4 @@
+//Ofir Shtrosberg 207828641
 #ifndef _GRID
 #define _GRID
 
@@ -5,21 +6,23 @@
 
 using namespace std;
 
-class Grid
-{
+class Grid {
     int _numOfRectangles;
-    Rectangle** _rectangleArr;
+    Rectangle **_rectangleArr;
 public:
-	Grid( double tileW, double tileH, int width, int height, int color );
-	~Grid();
+    Grid(double tileW, double tileH, int width, int height, int color);
+
+    ~Grid();
 
 public:
-	Rectangle* getRectAtPoint( const Point &p );
-	Rectangle* getRectAtIndex( int i );
+    Rectangle *getRectAtPoint(const Point &p);
+
+    Rectangle *getRectAtIndex(int i);
 
 public:
-	void moveGrid( double deltaLeft, double deltaTop );
-	void scaleGrid( double rectWidth, double rectHeight );
+    void moveGrid(double deltaLeft, double deltaTop);
+
+    void scaleGrid(double rectWidth, double rectHeight);
 };
 
 #endif
