@@ -2,7 +2,7 @@
 #include "Grid.h"
 
 using namespace std;
-
+//////
 int main()
 {
 	Grid g( 4, 2, 3, 2, 0 );
