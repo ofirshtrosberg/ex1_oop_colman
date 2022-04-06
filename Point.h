@@ -3,7 +3,10 @@
 #define _POINT
 
 using namespace std;
-
+/**
+ * this class represents a point
+ * each point has the values: x, y, scaleX and scaleY
+ */
 class Point {
     double _x;
     double _y;

@@ -5,7 +5,10 @@
 #include "Rectangle.h"
 
 using namespace std;
-
+/**
+ * this class represents a grid
+ * each grid has the values: numOfRectangles and array of pointers to rectangles
+ */
 class Grid {
     int _numOfRectangles;
     Rectangle **_rectangleArr;

@@ -30,7 +30,7 @@ bool Rectangle::contains(const Point &p) {
     return (p.getX() >= _topLeft.getX() && p.getX() <= _bottomRight.getX()
             && p.getY() >= _topLeft.getY() && p.getY() <= _bottomRight.getY());
 }
-// move the rectangle
+// move the rectangle according to the delta
 void Rectangle::moveRect(double deltaLeft, double deltaTop) {
     _topLeft.setX(_topLeft.getX() + deltaLeft);
     _topLeft.setY(_topLeft.getY() + deltaTop);
@@ -39,8 +39,8 @@ void Rectangle::moveRect(double deltaLeft, double deltaTop) {
 }
 // change the scale of the rectangle
 void Rectangle::scaleRect(double rectWidth, double rectHeight) {
-    double scaleX = rectWidth / (_bottomRight.getX() - _topLeft.getX());
-    double scaleY = rectHeight / (_bottomRight.getY() - _topLeft.getY());
+    double scaleX = rectWidth / (_bottomRight.getX() - _topLeft.getX()); //the proportion between the old width and the current width
+    double scaleY = rectHeight / (_bottomRight.getY() - _topLeft.getY());//the proportion between the old height and the current height
     _topLeft.setScaleX(_topLeft.getScaleX() * scaleX);
     _topLeft.setScaleY(_topLeft.getScaleY() * scaleY);
     _bottomRight.setScaleX(_bottomRight.getScaleX() * scaleX);

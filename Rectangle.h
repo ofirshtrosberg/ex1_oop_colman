@@ -5,7 +5,10 @@
 #include "Point.h"
 
 using namespace std;
-
+/**
+ * this class represents a rectangle
+ * each rectangle has the values: top left point, bottom right point and color
+ */
 class Rectangle {
     Point _topLeft;
     Point _bottomRight;
