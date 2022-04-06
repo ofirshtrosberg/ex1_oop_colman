@@ -1,6 +1,5 @@
 //Ofir Shtrosberg 207828641
 #include "Grid.h"
-#include "iostream"
 
 /*
  * constructor:
@@ -25,6 +24,7 @@ Grid::Grid(double tileW, double tileH, int width, int height, int color) {
     }
 
 }
+
 // return the rectangle that contain the given point
 Rectangle *Grid::getRectAtPoint(const Point &p) {
     for (int i = 0; i < _numOfRectangles; ++i) {
@@ -33,6 +33,7 @@ Rectangle *Grid::getRectAtPoint(const Point &p) {
     }
     return nullptr;
 }
+
 // return the rectangle at the given index (i)
 Rectangle *Grid::getRectAtIndex(int i) {
     if (i > _numOfRectangles) {
@@ -40,18 +41,21 @@ Rectangle *Grid::getRectAtIndex(int i) {
     }
     return _rectangleArr[i];
 }
+
 // move the grid according to the delta
 void Grid::moveGrid(double deltaLeft, double deltaTop) {
     for (int i = 0; i < _numOfRectangles; ++i) {
         _rectangleArr[i]->moveRect(deltaLeft, deltaTop);
     }
 }
+
 // scale the grid
 void Grid::scaleGrid(double rectWidth, double rectHeight) {
     for (int i = 0; i < _numOfRectangles; ++i) {
         _rectangleArr[i]->scaleRect(rectWidth, rectHeight);
     }
 }
+
 // destructor
 Grid::~Grid() {
     for (int i = 0; i < _numOfRectangles; ++i) {
