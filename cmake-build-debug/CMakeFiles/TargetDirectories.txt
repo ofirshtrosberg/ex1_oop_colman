@@ -1,0 +1,3 @@
+C:/Users/ofiri/OneDrive/Desktop/ex1oopcolman/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ofiri/OneDrive/Desktop/ex1oopcolman/cmake-build-debug/CMakeFiles/ex1oopcolman.dir
+C:/Users/ofiri/OneDrive/Desktop/ex1oopcolman/cmake-build-debug/CMakeFiles/edit_cache.dir
